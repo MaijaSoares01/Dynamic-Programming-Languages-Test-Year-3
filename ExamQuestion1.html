@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- EXAM 5TH NOV 2021 -->	
+<!-- Student Name: Maija Soares -->	
+<!-- Student Number: C19478224 -->	
+<!-- Module: Dynamic Programming Language -->	
+<!-- Question 1 -->	
+<p>Is the number inputted a multiple of five?? Answer is below....</p>
+<p id="multiple"></p>
+<script>
+function myFunction(a,b){
+	var addition = a + b;
+	var remainder = addition % 5;
+	document.write("Numbers are :<br>Number 1: " + a + "<br>Number 2: " + b);
+	document.write("<br>Addition of Number 1 and 2 is: " + addition);
+	if (remainder === 0) {
+		return "<br>Number is a multiple of Five!!";
+	}else{
+		document.write("<br>Remainder is: " + remainder);
+		return "<br>Number is NOT a multiple of Five....";
+	}
+}
+document.getElementById("multiple").innerHTML = myFunction(5 , 25);
+</script>
+</body>
+</html>

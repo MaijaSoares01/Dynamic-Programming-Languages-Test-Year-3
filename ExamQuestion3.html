@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- EXAM 5TH NOV 2021 -->	
+<!-- Student Name: Maija Soares -->	
+<!-- Student Number: C19478224 -->	
+<!-- Module: Dynamic Programming Language -->	
+<!-- Question 3 -->	
+<script>
+	const myID = 'C19478224';
+	const myArray = [];
+	for (var i = myID.length - 1; i >= 0; i--) {
+        myArray.unshift(myID[i]);
+    }
+	document.write("My ID as Array:<br>");
+	document.write(myArray);
+	const even1 = myArray.slice(3,4);
+	const even2 = myArray.slice(6,9);
+	const evenArray = even1.concat(even2);
+	document.write("<br>Even Numbers in the ID:");
+	document.write("<br>" + evenArray);
+	document.write("<br>Join Even Number Array:");
+	const myString = evenArray.join('');
+	document.write("<br>" + myString);
+</script>
+</body>
+</html>

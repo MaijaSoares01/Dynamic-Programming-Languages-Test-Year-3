@@ -1,0 +1,6 @@
+The colour that would display for the text would be WHITE.
+Why is this?
+Internal Style sheets are like the general/overall rules of the page, it is located within the <head> tags in the html file. The 'rules' however only apply to the page it is located in, the 'rules' cannot be refferred to by another html file.
+External Style sheets are a .css file(they are not located in the html file, it is a standalone file). Unlike Internal and Inline, multiple html files can refer to it's style 'rules' if it is linked to it. If the .css is editted all html files linked to it would change/update to correspond to the file.
+Inline Style tags are assigned to a specific html tag using the "style = ....." attribrute.
+In short, the more general the 'rules' are the less priority they hold. This is why inline would take priority as it is directly connected to a specific tag.

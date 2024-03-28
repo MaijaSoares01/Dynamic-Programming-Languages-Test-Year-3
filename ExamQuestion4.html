@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- EXAM 5TH NOV 2021 -->	
+<!-- Student Name: Maija Soares -->	
+<!-- Student Number: C19478224 -->	
+<!-- Module: Dynamic Programming Language -->	
+<!-- Question 4 -->	
+<h1 id = "headingId">Number IDs</h1>
+<div><b>Number 1 : </b><br><input type="number" id="inputId1" name="number1" value="0"></div><br>
+<div><b>Number 2 : </b><br><input type="number" id="inputId2" name="number2" value="0"></div><br>
+<button id="buttonId" onclick="document.getElementById('Action1').innerHTML=myFunction()">Actions</button>
+<h2 id = "headingId">Action 1: </h2><b>Number 1 * 5 = </b><span id = "Action1"></span>
+<h2 id = "headingId">Action 2: </h2><b>Number 2 + 11 = </b><span id = "Action2"></span>
+<h2 id = "headingId">Action 3: </h2><b>Action 1 + Action 2 = </b><span id = "Action3"></span>
+<h2 id = "headingId">Action 4: </h2><b>"X" + Action 3 = </b><span id = "Action4"></span>
+<script>
+function myFunction(){
+	var number1 = document.getElementById("inputId1");
+	var number2 = document.getElementById("inputId2");
+	var num1 = number1.value;                                                   
+	num1 = parseInt(num1);                                                      
+	var num2 = number2.value;                                                  
+	num2 = parseInt(num2);
+	var action1 = num1 * 5;
+	var action2 = num2 + 11;
+	var action3 = action1 + action2;
+	var x = "X";
+	var action4 = x. concat(action3);
+	document.getElementById("Action1").innerHTML = action1;                    
+	document.getElementById("Action2").innerHTML = action2;            
+	document.getElementById("Action3").innerHTML = action3;
+	document.getElementById("Action4").innerHTML = action4;
+	return action1;
+}
+</script>
+</body>
+</html>
